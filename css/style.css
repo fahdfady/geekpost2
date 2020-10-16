@@ -148,11 +148,13 @@ nav .round {
     left: 0;
     right: 0;
     order: 0;
+    pointer-events: none;
 }
 
 .mainNav .round {
     font-size: 30px;
     margin-top: 70px;
+    pointer-events: all;
 }
 
 .mainNav .profilePic {
@@ -205,15 +207,13 @@ nav .round {
 
 .search {
     width: 24.7%;
-    order: 5;
-    margin-left: auto;
-    margin-right: 15px;
+    order: 0;
+    margin-right: auto;
+    margin-left: 15px;
 }
 
 .form-inline .form-control {
-    display: inline-block;
-    width: 305px;
-    vertical-align: middle;
+    text-align: right;
 }
 
 .btn-light {
@@ -232,13 +232,13 @@ nav .round {
 /* Search button end */
 
 .settingSide {
-    order: 10;
+    order: -5;
     /* margin-left: auto; */
-    margin-right: 15px;
+    margin-left: 20px;
     width: 14%;
     display: flex;
     justify-content: flex-start;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .settingSide .settings:before {
@@ -269,12 +269,14 @@ nav .round {
     margin: auto;
     margin-top: 21px;
 }
-.side-bar{
+
+.side-bar {
     position: fixed;
 }
+
 .create-post {
     padding: 5px;
-    min-height: 15%;
+    min-height: 120px;
     background: #e8e8e8;
     border: none;
     outline: none;
